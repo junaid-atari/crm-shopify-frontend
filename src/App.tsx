@@ -1,18 +1,17 @@
 import React from 'react';
 
+// ui-components
 import {Button} from '@shopify/polaris';
 
-function App() {
-  return (
-    <div className="App">
-      <Button
-        onClick={() => {
-         console.log("Clicked button");
-        }}>
-        Go back to Flow
-      </Button>
-    </div>
-  );
-}
+const App: React.FC<React.PropsWithoutRef<any>> = () => (
+  <>
+    <Button
+      onClick={() => {
+        console.log("Clicked, See. I do nothing");
+      }}>
+      Go back to Flow
+    </Button>
+  </>
+);
 
 export default App;
